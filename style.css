@@ -1,0 +1,254 @@
+/* geral */
+
+*{
+    margin: 0;
+    padding: 0;
+   
+  }
+  .container{
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+  }
+  a{
+    text-decoration: none;
+    color: #fafafa;
+  }
+  
+  body{
+    background-color: #fefefe;
+    font-family: helvetica;
+  }
+  ::-webkit-scrollbar{
+    width: 0;
+  }
+  
+  /* navegaçao */
+  
+  header{
+    height: 20vh;
+    width: 100vw;
+  }
+  nav{
+    background-color: #aaa;
+    width: 100vw;
+    height: 20vh;
+  }
+  #section1{
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(https://img.freepik.com/fotos-premium/uma-placa-branca-com-um-fundo-preto-e-um-fundo-branco_1290686-31911.jpg?w=740);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #grup{
+    height: 50vh;
+    width: 50vh;
+    background-color: #bfd3b4;
+  }
+  #imgContainer{
+    height: 25vh;
+    width: 25vw;
+    background-color: #aaa;
+  }
+  
+  /* citacoes */
+  
+  #section4{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160vh;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #textSection4{
+    background-color: #aaaaaa80;
+    width: 35vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  #cardCuriosity{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .containerCuriosity{
+    position: relative;
+    width: 25vw;
+    height: 60vh;
+}
+.containerCuriosity:hover .flipInner{
+    transform: rotateY(180deg);
+}
+.flipInner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+
+.curiosityFront,.curiosityBack{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 10px #999;
+    backface-visibility: hidden;
+    border-radius: 50px;
+}
+.curiosityFront{
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-minimalista-branco-abstrato-moderno_84443-8335.jpg?t=st=1725636048~exp=1725639648~hmac=2ed461479f49ce83b2a41391cd41621202e168d747d37eae29200092fb7a3080&w=900);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.curiosityBack{
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-minimalista-branco-abstrato-moderno_84443-8335.jpg?t=st=1725636048~exp=1725639648~hmac=2ed461479f49ce83b2a41391cd41621202e168d747d37eae29200092fb7a3080&w=900);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  
+  /*  topicos  */
+  
+  #section2{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #containerText{
+    width: 10vw;
+    height: 10vh;
+    background-color: red;
+  }
+  #containerFacts{
+    background-color: blue;
+    height: 75vh;
+    width: 75vw;
+    display: flex;
+    
+  }
+  .card{
+    height: auto;
+    width: 25vw;
+    background-color: green;
+  }
+  
+  /* Biografia */
+  
+  #section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140vh;
+    background-color: #fefefe;
+  }
+  #text{
+    background-color: ;
+    height: 15vh;
+    width: 15vw;
+    text-align: center;
+    border-bottom: 3px solid #11212d;
+    border-radius:0 0 0 0;
+    margin-bottom: 15vh;
+  }
+  #text p{
+    font-size: 15px;
+    color: #222;
+  }
+  #titleP{
+    font-family: Times New Roman;
+    font-style: ;
+    color: #06141b;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  #containerBiogra{
+    height: 80vh;
+    width: 80vw;
+    background-color: ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #imgBiogra{
+    height: 80vh;
+    width: 40vw;
+    background-color: pink;
+    border-radius:50%;
+    margin-right: 5vh;
+    background-image: url();
+  }
+  #textBiogra{
+    height: 80vh;
+    width: 40vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #textBiogra p{
+    font-family: helvetica;
+    font-size: 18px;
+    color: #222;
+  }
+  
+  /* parte final */
+  footer{
+    height: 60vh;
+    width: 100vw;
+    background-color: #fefefe;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-gradiente-preto-com-linhas-onduladas_23-2149146012.jpg?t=st=1725575240~exp=1725578840~hmac=77f3b3b9485f042cdcb115981fc625e079aa1de99a89de78d1f48672401b7da1&w=740);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 35% 35% 0 0;
+  }
+  #containerFooter{
+    
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .containerLinks{
+    height: 40vh;
+    width: 25vw;
+    flex-direction: column;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer h2{
+    border-bottom:1px double #fff;
+    color: #fff;
+    font-style: italic;
+  }
+  /* https://br.pinterest.com/pin/649292471282830130/ */
